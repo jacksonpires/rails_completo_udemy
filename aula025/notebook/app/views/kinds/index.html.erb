@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Kinds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kinds.each do |kind| %>
+      <tr>
+        <td><%= kind.description %></td>
+        <td><%= link_to 'Show', kind %></td>
+        <td><%= link_to 'Edit', edit_kind_path(kind) %></td>
+        <td><%= link_to 'Destroy', kind, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kind', new_kind_path %>

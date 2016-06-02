@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE34C081-8870-2AE1-B5A8-CE9C8C8AB8BE" name="Addresses">
+<createdBy>jacksonpires</createdBy>
+<createdTime>2016-05-25 22:46:20 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="21C1CF9D-198F-FF91-A6EB-4A71E51407E9">
+<createdBy>jacksonpires</createdBy>
+<createdTime>2016-05-25 22:47:08 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street" id="5D44B48B-1A72-1268-AED8-E0F3A35B841D">
+<createdBy>jacksonpires</createdBy>
+<createdTime>2016-05-25 22:47:08 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="441324C2-D886-E622-895C-82F6F3FA0BA5">
+<createdBy>jacksonpires</createdBy>
+<createdTime>2016-05-25 22:48:28 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="90045E18-62A6-E752-0095-DD93B8F3A5A3">
+<createdBy>jacksonpires</createdBy>
+<createdTime>2016-05-25 22:48:46 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contact_id" id="260A0F70-55D3-E5B8-C121-E3F6433EABE1">
+<createdBy>jacksonpires</createdBy>
+<createdTime>2016-05-25 23:42:18 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DD6B8EF-F9A6-0461-E1D7-34246E01D60E" referredColumn="3474D8D4-4E84-2E03-AAAF-194E505FC735"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="268198D3-F3EC-4604-2FBE-176088EA9E5B" name="Address_PK">
+<createdBy>jacksonpires</createdBy>
+<createdTime>2016-05-25 22:47:08 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21C1CF9D-198F-FF91-A6EB-4A71E51407E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1C03069-504F-24D9-92E7-327C8C70A9AF" name="Address_Contact_FK">
+<createdBy>jacksonpires</createdBy>
+<createdTime>2016-05-25 23:43:08 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="260A0F70-55D3-E5B8-C121-E3F6433EABE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

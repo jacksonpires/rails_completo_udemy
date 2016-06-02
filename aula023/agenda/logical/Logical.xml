@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="D54D7520-362E-A201-CFF0-039F76A57C3F" mainViewID="B2713D35-FACB-C018-5B72-C19EE0480309">
+<createdBy>jacksonpires</createdBy>
+<createdTime>2016-05-25 22:07:43 UTC</createdTime>
+<ownerDesignName>agenda</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
