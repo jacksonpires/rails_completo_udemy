@@ -1,4 +1,4 @@
-# Ruby on Rails Curso Completo - Udemy
+# Ruby on Rails - Curso Completo
 
 Aqui ficarão os execícios do curso de Ruby on Rails Completo da Udemy
 
