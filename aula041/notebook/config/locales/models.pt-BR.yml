@@ -1,0 +1,10 @@
+"pt-BR":
+  activerecord:
+    models:
+      contact: Contato
+    attributes:
+      contact:
+        name: "Nome"
+        email: "Email"
+        kind: "Tipo de Contato"
+        rmk: "Obs"
