@@ -1,0 +1,31 @@
+<div class="basic-grey">
+  <p id="notice"><%= notice %></p>
+  
+  <h1><%= "#{t('messages.listing')} #{@contacts.model.model_name.human(count: @contacts.count)}" %></h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th><%= @contacts.model.human_attribute_name("name") %></th>
+        <th><%= @contacts.model.human_attribute_name("kind") %></th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% @contacts.each do |contact| %>
+        <tr style="background: <%= cycle('white', '#f0f0f5') %>">
+          <td><%= contact.name %></td>
+          <td><%= contact.kind.description %></td>
+          <td><%= link_to t('buttons.show'), contact %></td>
+          <td><%= link_to t('buttons.edit'), edit_contact_path(contact) %></td>
+          <td><%= link_to t('buttons.destroy'), contact, method: :delete, data: { confirm: t('messages.confirm') } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  
+  <br>
+  
+  <%= link_to t('buttons.new'), new_contact_path %>
+</div>
