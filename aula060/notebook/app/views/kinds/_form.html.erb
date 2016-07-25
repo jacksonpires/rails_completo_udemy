@@ -1,0 +1,26 @@
+<br/>
+<%= form_for(@kind, html: { class: "basic-grey" }) do |f| %>
+  <h1><%= @kind.model_name.human %></h1>
+
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  
+  <div class="field">
+    <%= f.submit t('buttons.save'), class: "btn btn-primary" %>
+    <%= link_to t('buttons.back'), contacts_path, class: "btn btn-success"%>
+  </div>
+  
+  <% if @kind.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= "#{pluralize(@kind.errors.count, 'error')} #{t('messages.errors')}:" %></h2>
+
+      <ul>
+      <% @kind.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% end %>
